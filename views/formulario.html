@@ -7,14 +7,58 @@
 </head>
 <body>
 
-    <form action="/html_almacen/action_page.html" method="POST">
-     <label for="Nombre">Nombre:</label><br>
-     <input type="text" name="nombre" id="nombre" value="Doctor"></label><br>
-     <label for="apellido">Apellido:</label><br>
-     <input type="text" name="apellido" id="apellido" value="Stone"></label><br>
-     <br><br>
+    <form action="./action_page.html" method="POST">
+      
+     <fieldset>
 
-     <input type="submit" value="Guardar">
+         <legend>Formulario</legend>
+
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" name="nombre" id="nombre" value="Doctor"></label><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" name="apellido" id="apellido" value="Stone"></label><br>
+        <br><br>
+ 
+ 
+        <!-- input de tipo select -->
+        <select name="carros">
+             <option value="Jeep">Ferrari</option>
+             <option value="Camaro">Lamborghini</option>
+             <option value="Tacoma">McLaren</option>
+             <option value="challenger">Bugatti</option>
+        </select><br><br>
+ 
+        <!-- text area -->
+        <textarea name="mensaje" cols="30" rows="10">
+           Nueva temporada de Doctor Stone
+        </textarea><br><br>
+       
+ 
+         <!-- radio buttom -->
+         <p>Selecciona un genero</p>
+         <input type="radio" name="genero" id="hombre" value="hombre">
+         <label for="hombre">Hombre</label><br>
+         <input type="radio" name="genero" id="mujer" value="mujer">
+         <label for="mujer">Mujer</label><br><br>
+
+          <!-- checkBox -->
+          <p>Selecciona un vehiculo</p>
+          <input type="checkbox" id="vehiclel" name="vehiclel" value="bici">
+          <label for="vehiclel">Tengo Bici</label><br>
+          <input type="checkbox" id="vehiclel2" name="vehiclel2" value="kinsong18l">
+          <label for="vehiclel">Tengo monociclo Kingsong</label><br>
+          <input type="checkbox" id="vehiclel3" name="vehiclel3" value="bote pateado">
+          <label for="vehiclel">Tengo Bote Pateado</label><br><br>
+          
+          
+         <svg width="100" height="100">
+             <circle cx="50" cy="50" r="40" stroke="red" stroke-width="5" fill="blue"/>
+         </svg> <br><br>
+
+        <input type="submit" value="Guardar">
+        <button type="button" onclick="alert('En 2021 tenemos nueva temporada de Doctor Stone')">Dale click</button>
+    </fieldset>
+
     </form>
 
 </body>

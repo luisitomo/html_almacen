@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+<body>
+    <h1>Guardar un nuevo producto</h1>
+
+    <form action="lista.html" method="POST">
+       
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" name="nombre"><br><br>
+
+        <label for="categoria">Categoria</label><br>
+        <select name="categoria">
+            <option value="">Selecciona una categoria----</option>
+            <option value="refrescos">Refrescos</option>
+            <option value="carhes_frias">Carnes frias</option>
+            <option value="herramientas">Herramientas</option>
+        </select><br><br>
+
+        <label for="precio">Precio:</label><br>
+        <input type="text" name="precio"><br><br>
+
+        <input type="number" name="stock" placeholder="stock"><br><br>
+
+        <input type="submit" value="Guardar">
+
+    </form>
+</body>
+</html>
