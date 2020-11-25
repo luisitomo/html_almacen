@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+
+    <script>
+        switch (new Date().getDay()) { 
+            case 6:
+                var text = "Hoy es sabado";
+                break;
+            case 3:
+                var text = "Hoy es domingo";
+                break;
+            default:
+                var text = "Hoy es un dia como cualquier otro dia excepto sabado y Domingo";
+       }
+
+        console.log(text);
+    </script>
+    
+</body>
+</html>
