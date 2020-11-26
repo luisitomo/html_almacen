@@ -7,6 +7,8 @@
 </head>
 <body>
     
+        <div id="demo"></div>
+
     <script>
         var nombre = "Frank";
         var lista = ["Pera", 10, nombre, null, "Madrid"]; 
@@ -15,6 +17,20 @@
         console.log(lista[2]);
         console.log(lista.length);
         console.log(lista[lista.length - 1]);
+
+    
+
+         var frutas = ['platano, manzana'];
+         var ultimo = frutas.pop()
+         console.log(ultimo) ;
+         document.getElementById('demo').innerHTML = frutas.toString();
+
+         var nums =[45, 5, 50, 10];
+         var filtrado = nums.filter((value, index, array) =>{
+
+         });
+         console.log(filtrado);
+         
     </script>
 
 </body>
